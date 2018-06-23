@@ -10,7 +10,7 @@ phases:
       - npm run webpack:production
   post_build:
     commands:
-      - aws s3 cp build/* s3://carsonhoward.com/* --recursive
+      - aws s3 cp build s3://carsonhoward.com --recursive
 
 artifacts:
   files:
