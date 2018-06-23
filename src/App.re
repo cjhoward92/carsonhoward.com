@@ -9,7 +9,7 @@ let make = (_children) => {
     <div
       className="app"
     >
-      <App2 greeting="Hello" />
+      <App2 greeting="Hey, the build worked!" />
     </div>;
   },
 };
