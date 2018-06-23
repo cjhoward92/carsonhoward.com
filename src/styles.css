@@ -4,7 +4,34 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: #FCFCFC;
+  color: #2F2F2F;
+  flex-direction: column;
+}
+
+/* jet: #2F2F2F */
+/* black: #000000 */
+/* max yellow: #F6F930 */
+/* mindaro: #D2F898 */
+/* baby powder: #FCFCFC */
+
+#root {
+  height: 700px;
+}
+
+#secondary {
+  height: 2000px;
+}
+
 .app {
-  background-color: green;
-  color: red;
+  margin: 0 auto;
+  width: 100%;
 }
