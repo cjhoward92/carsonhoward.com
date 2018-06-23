@@ -13,7 +13,7 @@ let onScrollClick = (_event) => {
 let make = (_children) => {
   /* spread the other default fields of component here and override a few */
   ...component,
-  render: self => {
+  render: (_self) => {
     let clickMessage = "Click to scroll";
     <div
       className="app"
