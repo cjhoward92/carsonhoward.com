@@ -1,0 +1,20 @@
+version: 0.2
+            
+phases:
+  install:
+    commands:
+      - npm i
+  build:
+    commands:
+      - npm run build
+      - npm run webpack:build
+  post_build:
+    commands:
+      - aws s3 cp ./build/* s3://carsonhoward.com/*
+
+artifacts:
+  files:
+    - build/index.html
+    - build/Index.js
+    - build/styles.css
+  base-directory: .
