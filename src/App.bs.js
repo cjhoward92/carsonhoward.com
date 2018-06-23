@@ -7,13 +7,6 @@ var App2$ReactTemplate = require("./App2.bs.js");
 
 var component = ReasonReact.statelessComponent("App");
 
-var appStyle = {
-  background: "green",
-  color: "red",
-  margin: "0 auto",
-  padding: "0"
-};
-
 function make() {
   return /* record */[
           /* debugName */component[/* debugName */0],
@@ -27,7 +20,7 @@ function make() {
           /* shouldUpdate */component[/* shouldUpdate */8],
           /* render */(function () {
               return React.createElement("div", {
-                          style: appStyle
+                          className: "app"
                         }, ReasonReact.element(/* None */0, /* None */0, App2$ReactTemplate.make("Hello", /* array */[])));
             }),
           /* initialState */component[/* initialState */10],
@@ -39,6 +32,5 @@ function make() {
 }
 
 exports.component = component;
-exports.appStyle = appStyle;
 exports.make = make;
 /* component Not a pure module */
