@@ -20,12 +20,9 @@ const plugins = [
   )
 ];
 
-module.exports = {
+const config = {
   entry: './src/Index.bs.js',
   mode: isProd ? 'production' : 'development',
-  devServer: isProd ? null : {
-    contentBase: outputDir
-  },
   devtool: isProd ? '(none)' : 'source-map',
   output: {
     path: outputDir,
@@ -33,3 +30,9 @@ module.exports = {
   },
   plugins,
 };
+
+const devServer = {
+  contentBase: outputDir
+};
+
+module.exports = isProd ? config : { ...config, devServer }
