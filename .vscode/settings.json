@@ -1,0 +1,8 @@
+{
+  "terminal.integrated.shell.windows": "C:\\Windows\\sysnative\\bash.exe",
+  "reason.command.useWSL": true,
+  "reason.command.shellargs": [
+    "-ic"
+  ],
+  "reason.command.shell": "C:\\Windows\\sysnative\\bash.exe"
+}
