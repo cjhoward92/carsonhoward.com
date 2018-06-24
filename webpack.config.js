@@ -12,7 +12,11 @@ const plugins = [
     filename: './index.html'
   }),
   new CopyPlugin(
-    ['./src/styles.css'],
+    [
+      './src/styles.css',
+      './src/resume.pdf',
+      './src/Shaka_me.jpg'
+    ],
     {
       from: 'src',
       to: 'build'
@@ -27,6 +31,14 @@ const config = {
   output: {
     path: outputDir,
     filename: './Index.js',
+  },
+  module: {
+    rules: [
+      {
+        test: /\.(png|svg|jpg|gif)$/,
+        use: 'file-loader'
+      }
+    ]
   },
   plugins,
 };
