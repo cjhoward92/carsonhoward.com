@@ -1,7 +1,7 @@
 let component = ReasonReact.statelessComponent("About");
 
 let aboutMe = "
-I am not a designer, that's for sure. This site is built wity ReasonReact and deployed on AWS.
+I am not a designer, that's for sure. This site is built with ReasonReact and deployed on AWS.
 It also builds and deploys automatically when I push to GitHub, so there's that. Feel free to
 view the source code 
 ";
