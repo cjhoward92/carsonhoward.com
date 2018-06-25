@@ -1,6 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
+const UglifyJS = require('uglifyjs-webpack-plugin');
 
 const outputDir = path.join(__dirname, "build/");
 
@@ -23,6 +24,12 @@ const plugins = [
     }
   )
 ];
+
+if (isProd) {
+  plugins.push(new UglifyJS({
+    test: /\.js($|\?)/i
+  }));
+}
 
 const config = {
   entry: './src/Index.bs.js',
