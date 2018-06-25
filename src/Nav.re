@@ -37,10 +37,9 @@ let make = (_children) => {
       <li>
         <a
           className="resume-link"
-          href="resume.pdf"
-          download="resume.pdf"
+          href="mailto:cjhoward92@gmail.com?subject=Resume"
         >
-          (ReasonReact.string("My Resume"))
+          (ReasonReact.string("Resume"))
         </a>
       </li>
     </ul>

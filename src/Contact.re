@@ -5,7 +5,7 @@ let make = (_children) => {
   render: (_self) => {
     <div className="contact">
       <a href="mailto:cjhoward92@gmail.com">
-        (ReasonReact.string("Email me as cjhoward92@gmail.com!"))
+        (ReasonReact.string("Cantact me at cjhoward92@gmail.com"))
       </a>
     </div>;
   },
