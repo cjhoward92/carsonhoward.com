@@ -15,6 +15,9 @@ let make = (_children) => {
     let scrollToWords = makeScrollOnClick(wordsDiv);
     let scrollToContact = makeScrollOnClick(contactDiv);
     <ul className="navbar">
+      <li className="brand-container">
+        <p className="brand">(ReasonReact.string("Carson Howard"))</p>
+      </li>
       <li>
         <button
           className="nav-button"

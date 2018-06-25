@@ -34,11 +34,12 @@ body {
   flex-direction: row;
   margin: 0 auto;
   padding: 0;
-  justify-content: flex-end;
+  justify-content: flex-start;
   background: black;
   color: #FCFCFC;
   height: 50px;
   vertical-align: center;
+  width: 100%;
 }
 
 .navbar li {
@@ -46,6 +47,37 @@ body {
   vertical-align: center;
   justify-content: center;
   width: 120px;
+}
+
+.navbar .brand-container {
+  display: flex;
+  vertical-align: center;
+  justify-content: flex-start;
+  flex-grow: 1;
+}
+
+.brand {
+  display: inline;
+  background: black;
+  color: #FCFCFC;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 15px 10px 10px 10px;
+  flex-grow: 1;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar li {
+    display: flex;
+    vertical-align: center;
+    justify-content: center;
+    flex-grow: 1;
+  }
+
+  .brand {
+    padding-top: 5px;
+  }
 }
 
 .nav-button {
@@ -66,13 +98,19 @@ body {
 }
 
 .resume-link {
-  display: flex;
+  display: inline;
   background: black;
   color: #FCFCFC;
   text-decoration: none;
-  padding: 15px 10px 10px 15px;
-  width: 100%;
   font-size: 14px;
+  padding: 15px 10px 10px 10px;
+  text-align: center;
+}
+
+@media screen and (max-width: 360px) {
+  .resume-link {
+    padding-top: 5px;
+  }
 }
 
 .resume-link:hover {
@@ -114,4 +152,9 @@ body {
 .about p {
   margin-top: 10px;
   max-width: 800px;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
 }
