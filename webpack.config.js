@@ -15,7 +15,7 @@ const plugins = [
   new CopyPlugin(
     [
       './src/styles.css',
-      './src/Shaka_me.jpg'
+      './src/at_desk.png'
     ],
     {
       from: 'src',

@@ -7,7 +7,7 @@ view the source code
 ";
 
 let aboutMe2 = "
-if you feel so inclined. Otherwise, don't. Your call.
+if you are so inclined. Otherwise, don't. Your call.
 ";
 
 let make = (_children) => {
@@ -15,7 +15,7 @@ let make = (_children) => {
   render: (_self) => {
     <div className="about">
       <div>
-        <img src="/Shaka_me.jpg" alt="Me in Hawaii" />
+        <img src="/at_desk.png" alt="Me at a desk!" />
         <p>
           (ReasonReact.string(aboutMe))
           <a href="https://github.com/cjhoward92/carsonhoward.com">(ReasonReact.string("here"))</a>
